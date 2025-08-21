@@ -21,6 +21,7 @@ This project applies **data preprocessing, class imbalance handling with SMOTE, 
 
 ## 📂 Project Structure
 
+```
 ├── data/ # Dataset files (add your dataset here)
 ├── models/ # Saved trained models (.pkl)
 ├── notebooks/ # Jupyter notebooks for exploration
@@ -30,6 +31,7 @@ This project applies **data preprocessing, class imbalance handling with SMOTE, 
 │ └── evaluate_model.py
 ├── README.md # Project documentation
 └── requirements.txt # List of dependencies
+```
 
 
 ---
@@ -38,23 +40,28 @@ This project applies **data preprocessing, class imbalance handling with SMOTE, 
 
 Clone the repository:
 
+```
 git clone https://github.com/your-username/customer-churn-prediction.git
 cd customer-churn-prediction
 
 Install dependencies:
 
 pip install -r requirements.txt
+```
 
 # Requirements:
+```
 numpy
 pandas
 matplotlib
 seaborn
 scikit-learn
-imblearn
+imbalanced-learn
 xgboost
+```
 
-⚙️ Usage
+# ⚙️ Usage
+
 1️⃣ Train the Model
 python src/train_model.py
 
@@ -71,13 +78,13 @@ model = pickle.load(open("models/churn_model.pkl", "rb"))
 prediction = model.predict([[...]])
 print("Churn Prediction:", prediction)
 
-📈 Results
+# 📈 Results
 
 Models evaluated with Accuracy, Precision, Recall, and F1-score
 
 Confusion matrices and classification reports generated for deeper insights
 
-🔮 Future Improvements
+# 🔮 Future Improvements
 
 Add more advanced algorithms (LightGBM, CatBoost)
 
@@ -87,7 +94,7 @@ Deploy as an API using Flask / FastAPI
 
 Build interactive dashboards with Streamlit / Dash
 
-🤝 Contributing
+# 🤝 Contributing
 
 Contributions are welcome!
 
@@ -101,6 +108,6 @@ Push to the branch (git push origin feature/YourFeature)
 
 Open a Pull Request
 
-📜 License
+# 📜 License
 
 This project is licensed under the MIT License.
